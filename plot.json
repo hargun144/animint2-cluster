@@ -1,0 +1,351 @@
+{
+ "geoms": {
+ "geom1_rect_plot1": {
+ "geom": "rect",
+"classed": "geom1_rect_plot1",
+"aes": {
+ "xmin": "xmin",
+"xmax": "xmax",
+"ymin": "ymin",
+"ymax": "ymax",
+"fill": "selected",
+"showSelected1": "iter",
+"showSelected2": "selected" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.2,
+"colour": "#000000",
+"showSelected": [ "iter", "selected" ],
+"help_showSelected": [ "iter", "selected" ] 
+},
+"types": {
+ "fill": "rgb",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_plot1": {
+ "geom": "point",
+"classed": "geom2_point_plot1",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "selected",
+"showSelected1": "iter",
+"showSelected2": "selected" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": [ "iter", "selected" ],
+"help_showSelected": [ "iter", "selected" ] 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [
+ "iter" 
+],
+"nest_order": [
+ "showSelected2" 
+],
+"subset_order": [
+ "showSelected2" 
+],
+"columns": {
+ "common": [
+ "group",
+"x",
+"y" 
+] 
+},
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10,
+"11": 11,
+"12": 12,
+"13": 13,
+"14": 14,
+"15": 15 
+},
+"total": 15 
+} 
+},
+"time": {
+ "variable": "iter",
+"ms":     1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ] 
+},
+"selectors": {
+ "selected": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "FALSE", "TRUE" ],
+"levels": [ "FALSE", "TRUE" ],
+"update": [
+ "geom1_rect_plot1",
+"geom2_point_plot1" 
+] 
+},
+"iter": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"chunks": "iter",
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ],
+"update": [
+ "geom1_rect_plot1",
+"geom2_point_plot1" 
+] 
+} 
+},
+"plots": {
+ "plot1": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "Status": {
+ "guide": "legend",
+"geoms": [ "polygon", "point" ],
+"title": "Status",
+"class": "selected",
+"selector": "selected",
+"is_discrete": true,
+"legend_type": [ "colour", "fill" ],
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "polygonfill": "#E5E5E5",
+"polygoncolour": "#000000",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.2,
+"label": "Not selected",
+"pointcolour": "#999999",
+"pointshape":       19,
+"pointsize":        3,
+"pointstroke":      0.5 
+},
+{
+ "polygonfill": "#FFCCCC",
+"polygoncolour": "#000000",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.2,
+"label": "Selected",
+"pointcolour": "#FF0000",
+"pointshape":       19,
+"pointsize":        3,
+"pointstroke":      0.5 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       3,
+       6,
+       9,
+      12 
+] 
+],
+"y": [
+ [
+        0,
+       3,
+       6,
+       9,
+      12 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     1.5,
+       3,
+     4.5,
+       6,
+     7.5,
+       9,
+    10.5,
+      12 
+] 
+],
+"y": [
+ [
+        0,
+     1.5,
+       3,
+     4.5,
+       6,
+     7.5,
+       9,
+    10.5,
+      12 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       3,
+       6,
+       9,
+      12 
+],
+"xlab": [
+ "0",
+"3",
+"6",
+"9",
+"12" 
+],
+"xrange": [    -0.05,    12.05 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+       3,
+       6,
+       9,
+      12 
+],
+"ylab": [
+ "0",
+"3",
+"6",
+"9",
+"12" 
+],
+"yrange": [    -0.05,    12.05 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"3",
+"6",
+"9",
+"12" 
+],
+"ylabs": [
+ "0",
+"3",
+"6",
+"9",
+"12" 
+],
+"title": "Cluster Sampling: randomly selected clusters",
+"title_size": "13.2pt",
+"options": {
+ "width":      550,
+"height":      500 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_rect_plot1",
+"geom2_point_plot1" 
+] 
+} 
+},
+"title": "Cluster Sampling Animation" 
+}
